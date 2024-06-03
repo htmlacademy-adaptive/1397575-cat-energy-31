@@ -1,0 +1,30 @@
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__list {
+    gap: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    padding-top: 82px;
+  }
+
+  .programs__list {
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+
+  .programs__item {
+    width: 570px;
+  }
+}

@@ -1,0 +1,27 @@
+.field {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 30px;
+  color: $text-basic-grey;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+  padding: 12px;
+  box-sizing: border-box;
+
+  &:not(:disabled):hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:not(:disabled):focus {
+    outline: 2px solid #444444;
+    outline-offset: -2px;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px solid #ff8282;
+  }
+}

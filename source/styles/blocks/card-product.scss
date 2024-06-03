@@ -1,0 +1,138 @@
+.card-product {
+  padding: 20px;
+  padding-bottom: 25px;
+  padding-right: calc((100% - 280px) / 2);
+  padding-left: calc((100% - 280px) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.card-product__illustration {
+  width: 50%;
+  height: 107px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-product__illustration img {
+  display: block;
+}
+
+.card-product__information {
+  width: 50%;
+  margin-bottom: 11px;
+}
+
+.card-product__link {
+  text-decoration: none;
+  color: $text-dark-grey;
+  display: block;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.card-product__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 14px;
+  width: 86px;
+}
+
+.card-product__property-list {
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.card-product__property-item {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.card-product__definition {
+  margin: 0;
+}
+
+.card-product__button {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .card-product {
+    height: 100%;
+    padding: 10px 37px 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-basic-grey;
+  }
+
+  .card-product__illustration {
+    width: 200px;
+    height: 210px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    margin-top: -81px;
+  }
+
+  .card-product__information {
+    width: 100%;
+    margin-bottom: 22px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-product__information .card-product__link {
+    flex-grow: 1;
+  }
+
+  .card-product__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 13px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-product__property-item {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 7px 0 4px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card-product {
+    padding: 10px 38px 40px;
+  }
+
+
+  .card-product__illustration {
+    width: 169px;
+    margin-bottom: 2px;
+  }
+
+  .card-product__title {
+    margin-bottom: 17px;
+  }
+
+  .card-product__property-item {
+    padding: 6px 0 7px;
+  }
+}
